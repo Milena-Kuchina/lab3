@@ -4,7 +4,7 @@ public class Animal {
     public Animal(String food, String location){
         this.food=food;
         this.location=location;
-        animalType="Животное";
+        animalType="Р–РёРІРѕС‚РЅРѕРµ";
     }
     String food;
     String location;
@@ -12,27 +12,27 @@ public class Animal {
 
     public String makeNoise(){
         if (isSleep) {
-            return animalType + " спит";
+            return animalType + " СЃРїРёС‚";
         }
         else{
-            return animalType +" издает звуки";
+            return animalType +" РёР·РґР°РµС‚ Р·РІСѓРєРё";
         }
     }
     public String eat(){
         if (isSleep) {
-            return animalType + " спит";
+            return animalType + " СЃРїРёС‚";
         }
         else{
-            return animalType + " ест " + food;
+            return animalType + " РµСЃС‚ " + food;
         }
     }
     public String sleep(){
         isSleep=true;
-        return animalType + " спит";
+        return animalType + " СЃРїРёС‚";
     }
     public String unSleep(){
         isSleep=false;
-        return animalType + " проснулось";
+        return animalType + " РїСЂРѕСЃРЅСѓР»РѕСЃСЊ";
     }
     boolean isSleep=false;
 
